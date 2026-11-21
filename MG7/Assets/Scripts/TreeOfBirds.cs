@@ -10,11 +10,6 @@ public class TreeOfBirds : MonoBehaviour
     {
         foreach (GameObject bird in _birds)
         {
-            if (bird == null)
-            {
-                continue;
-            }
-
             if (Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
             {
                 bird.SetActive(true);

@@ -59,7 +59,7 @@ public class Bird : MonoBehaviour
         // If the player is holding a seed, make the bird look at the player
         //      with the Transform.LookAt() method:
         //      https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Transform.LookAt.html
-        if (_player != null && _player._isHoldingSeed)
+        if (_player._isHoldingSeed)
         {
             transform.LookAt(_player.transform);
         }

@@ -121,8 +121,7 @@ public class Player : MonoBehaviour
         // Set the animation parameters to play the walking animation.
         // You might need the mouseY, mouseX, vertical, and horizontal variables
         //      that are above this step :)
-        bool isWalking = Mathf.Abs(vertical) > 0.01f || Mathf.Abs(horizontal) > 0.01f;
-        _animator.SetBool("Walking", isWalking);
+        _animator.SetBool("Walking", Mathf.Abs(vertical) > 0.01f || Mathf.Abs(horizontal) > 0.01f);
 
         // STEP 8 -------------------------------------------------------------
     }
